@@ -33,7 +33,7 @@ package Observer;
  *             update()方法的参数是主题对象本身，这基本上是主题对象能传递的最大数据集合了，基本上可以适应各种情况的需要。
  *
  *  扩展：Java本身对于观察者模式也提供了很好的支持，在JAVA语言的java.util库里面，提供了一个Observable类以及一个Observer接口，构成JAVA语言对观察者模式的支持。
- *          Observer接口：这个接口只定义了一个方法，即update()方法，当被观察者对象（主题角色）的状态发生变化时，被观察者对象的notifyObservers()方法就会调用这一方法。
+ *          Observer接口：这个接口只定义了一个方法，即update()方法，当被观察者对象（主题角色）的状态发生变化时，它的notifyObservers()方法就会调用这一方法。
  *          Observable类：被观察者类（主题角色）都是java.util.Observable类的子类。java.util.Observable提供公开的方法支持观察者对象，
  *                       这些方法中有两个对Observable的子类非常重要：一个是setChanged()，另一个是notifyObservers()。
  *                       第一方法setChanged()被调用之后会设置一个内部标记变量，代表被观察者对象的状态发生了变化。第二个是notifyObservers()，
@@ -41,6 +41,7 @@ package Observer;
  *                       Observable这个类代表一个被观察者对象，有时称之为主题对象。一个被观察者对象可以有数个观察者对象，每个观察者对象都是实现Observer接口的对象。
  *                       在被观察者发生变化时，会调用Observable的notifyObservers()方法，此方法调用所有的具体观察者的update()方法，从而使所有的观察者都被通知更新自己。
  *
+ *  其他相关介绍： http://www.cnblogs.com/java-my-life/archive/2012/05/16/2502279.html
  */
 public class Client {
 
