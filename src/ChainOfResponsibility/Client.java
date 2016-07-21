@@ -20,7 +20,7 @@ package ChainOfResponsibility;
  *          不纯的责任链模式里面，一个请求可以最终不被任何接收端对象所接收。纯的责任链模式的实际例子很难找到，一般看到的例子均是不纯的
  *          责任链模式的实现。有些人认为不纯的责任链根本不是责任链模式，这也许是有道理的。但是在实际的系统里，纯的责任链很难找到。
  *          如果坚持责任链不纯便不是责任链模式，那么责任链模式便不会有太大意义了。
- *
+ *  其他相关介绍： 1. http://www.cnblogs.com/java-my-life/archive/2012/05/28/2516865.html
  */
 public class Client {
     public static void main(String[] args) {
