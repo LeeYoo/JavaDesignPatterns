@@ -48,7 +48,7 @@ package Memento;
  *                  1. 创建一个含有它当前的内部状态的备忘录对象。
  *                  2. 使用备忘录对象存储其内部状态。
  *
- *
+ *  更多详细介绍：http://www.cnblogs.com/java-my-life/archive/2012/06/06/2534942.html
  */
 public class Client {
 
